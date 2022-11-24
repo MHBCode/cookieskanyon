@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Marhey:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    font-family: 'Marhey', cursive;
+}
+body{
+    margin: 0;
+    background-color: rgb(219,74,19);
+}
+.top-img-div{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.top-img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header-div{
+    text-align: center;
+    color: rgb(248,225,207);
+    margin: 0;
+    padding: 0;
+}
+.header-div p{
+    margin-top: 0;
+}
+.header-div h1{
+    margin: 0;
+}
+
+.arrow{
+    animation: arrow 1s;
+}
+.arrow img{
+    height: 50px;
+}
+.menus{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu-col{
+    width: 31%;
+    padding: 20px;
+    border-radius: 30px;
+}
+.menu-col h4{
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+}
+.menu-col p{
+    color: rgb(248,225,207);
+}
+.menu-col-head{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.menu-col-head img{
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgb(248,225,207);
+}
+.dots{
+    width: 100%;
+    border-bottom: 1px dashed rgb(248,225,207);
+}
+span{
+    color: rgb(239,162,18);
+    float: right;
+    font-weight: 300;
+}
+@keyframes arrow{
+    0% { transform: rotate(0deg); }
+  10% { transform:  rotate(-2deg); }
+  20% { transform:  rotate(2deg); }
+  30% { transform:  rotate(0deg); }
+  40% { transform:  rotate(2deg); }
+  50% { transform:  rotate(-2deg); }
+  60% { transform:  rotate(0deg); }
+  70% { transform:  rotate(-2deg); }
+  80% { transform:  rotate(2deg); }
+  90% { transform:  rotate(0deg); }
+  100% { transform:  rotate(-2deg); }
+}
+
+@media screen and (max-width:400px){
+    .arrow{
+        display: none;
+    }
+    .top-img-div{
+        position: fixed;
+        z-index: 1000;
+    }
+    .header-div{
+        padding-top: 33%;
+    }
+    .menu-col{
+        width: 100%;
+    }
+
+}
+@media screen and (min-width:1100px) {
+    .menu-col{
+        width: 21%;
+    }
+}
